@@ -44,7 +44,7 @@ if [[ -f "/etc/apt/apt.conf.d/20auto-upgrades" ]]; then
   mkdir -p "/bak"
   cp "/etc/apt/apt.conf.d/20auto-upgrades" "/bak/20auto-upgrades"
 else
-  cp "$SCRIPT_DIR/20-auto-upgrades" "/etc/apt/apt.conf.d/20auto-upgrades"
+  cp "$SCRIPT_DIR/20auto-upgrades" "/etc/apt/apt.conf.d/20auto-upgrades"
 fi
 
 if [[ "$ID" == "debian" ]]; then
